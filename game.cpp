@@ -16,7 +16,7 @@ int main() {
 	auto prevTime = clock::now();
 
 	bool running = true;
-	while (running && !coreLib::shouldExit()) {
+	while (running && !coreLib::ShouldExit()) {
 		auto frameStart = clock::now();
 		float deltaTime = std::chrono::duration<float>(frameStart - prevTime).count();
 		prevTime = frameStart;
